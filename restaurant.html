@@ -8,8 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<script src="./js/auth.js" defer></script>
-	<script src="./js/menu.js" defer></script>
+
+	<script src="/js/auth.js" defer></script>
+	<script src="/js/menu.js" defer></script>
 </head>
 
 <body>
@@ -22,13 +23,18 @@
 				<input type="text" class="input input-address" placeholder="Адрес доставки" />
 			</label>
 			<div class="buttons">
+				<span class="user-name"></span>
 				<button class="button button-primary button-auth">
 					<span class="button-auth-svg"></span>
 					<span class="button-text">Войти</span>
 				</button>
-				<button class="button" id="cart-button">
+				<button class="button button-cart" id="cart-button">
 					<span class="button-cart-svg"></span>
 					<span class="button-text">Корзина</span>
+				</button>
+				<button class="button button-primary button-out">
+					<span class="button-text">Выйти</span>
+					<span class="button-out-svg"></span>
 				</button>
 			</div>
 		</header>
@@ -50,155 +56,6 @@
 					<!-- /.card-info -->
 				</div>
 				<div class="cards cards-menu">
-					<div class="card">
-						<img src="img/pizza-plus/pizza-vesuvius.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Везувий</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, сыр «Моцарелла», ветчина, пепперони, перец
-									«Халапенье», соус «Тобаско», томаты.
-								</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">545 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
-
-					<div class="card">
-						<img src="img/pizza-plus/pizza-girls.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Девичник</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, постное тесто, нежирный сыр, кукуруза, лук,
-									маслины,
-									грибы, помидоры, болгарский перец.
-								</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">450 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
-
-					<div class="card">
-						<img src="img/pizza-plus/pizza-oleole.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Оле-Оле</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, сыр «Моцарелла», черри, маслины, зелень, майонез
-								</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">440 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
-
-					<div class="card">
-						<img src="img/pizza-plus/pizza-plus.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Плюс</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, сыр «Моцарелла», сыр «Чеддер», томаты,
-									пепперони,
-									телятина, грибы, бекон, болгарский перец.
-								</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">805 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
-
-					<div class="card">
-						<img src="img/pizza-plus/pizza-hawaiian.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Гавайская</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, сыр «Моцарелла», ветчина, ананасы</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">440 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
-
-					<div class="card">
-						<img src="img/pizza-plus/pizza-classic.jpg" alt="image" class="card-image" />
-						<div class="card-text">
-							<div class="card-heading">
-								<h3 class="card-title card-title-reg">Пицца Классика</h3>
-							</div>
-							<!-- /.card-heading -->
-							<div class="card-info">
-								<div class="ingredients">Соус томатный, сыр «Моцарелла», сыр «Пармезан», ветчина,
-									салями,
-									грибы.
-								</div>
-							</div>
-							<!-- /.card-info -->
-							<div class="card-buttons">
-								<button class="button button-primary button-add-cart">
-									<span class="button-card-text">В корзину</span>
-									<span class="button-cart-svg"></span>
-								</button>
-								<strong class="card-price-bold">510 ₽</strong>
-							</div>
-						</div>
-						<!-- /.card-text -->
-					</div>
-					<!-- /.card -->
 				</div>
 				<!-- /.cards -->
 			</section>
